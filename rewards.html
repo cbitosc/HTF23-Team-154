@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rewards and prizes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set a background color and font for the entire page */
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Ubuntu', sans-serif;
+            color: #333;
+        }
+
+        /* Style the navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            background-color: #036303;
+            color: white;
+            height: 75px;
+        }
+       .logo {
+        width: 50px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        margin-right: 10px; /* Add spacing to the right of the logo */
+        border-radius: 100%;
+    }
+    .title{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        /* Style the title */
+        .title h1 {
+            font-size: 1.5em;
+        }
+
+        /* Style the help button */
+        .help_button {
+            background-color: #036303;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+   .navbar div {
+            margin-right: 1em;
+        }
+
+        .items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Style the dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .services {
+            background-color: #036303;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .profile{
+            background-color: #036303;
+            color: white;
+            border: 2px solid white;
+            border-radius: 4px;
+            padding: 0.5em 1em;
+            margin: 10px;
+        }
+        .nav_bar{
+            display: flex;
+            justify-content: space-between;
+            color: black;
+            margin-left: 5%;
+            margin-right: 5%;
+            border-radius: 20px;
+        }
+        .box1{
+            border: black;
+            border-radius: 10px;
+            box-shadow:0px 8px 16px 0px rgba(0,0,0,0.5) ;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .container{
+            display: grid;
+            grid-gap: 5rem;
+        }
+        img{
+            border-radius: 50%;
+            width: 200px;
+            height: 150px;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+        .photo_para{
+            display: flex;
+        }
+        .para{
+            margin-top: 3%;
+            margin-left: 7%;
+            margin-right: 7%;
+            justify-content: center;
+        }
+        .name{
+            margin-left: 10%;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .contact{
+            margin-left: 7%;
+            margin-bottom: 10px;
+        }
+        .home{
+            margin-right: 7% ;
+            margin-top: 2%;
+        }
+        .home a{
+            margin-right: 7% ;
+            margin-top: 2%;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: large;
+            
+        }
+        .home a:hover{
+            padding: 10px;
+            background: red;
+            border-radius: 10px;
+        }
+        .head{
+            margin-left: 5%;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .thanks{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .thanks p{
+            justify-content: center;
+            margin-left: 5%;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="title">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgzEjlWUUEdCerUry1W7wOKcLKpepjV9hOEQ&usqp=CAU" alt="community logo" class="logo">
+                <h1>CommunityHub</h1>
+            </div>
+            <div class="items">
+                <div class="dropdown">
+                    <button class="services">Services</button>
+                    <div class="dropdown-content">
+                        <a href="communitypage.html">Home</a>
+                        <a href="announcements.html">Announcements</a>
+                        <a href="discussions.html">Discussions</a>
+                        <a href="problemchatpage.html">Problem chat</a>
+                        <a href="alerts.html">Alert Box</a>
+                        <a href="volunteeractivities.html">Volunteer Activities</a>
+                        <a href="problemshoot.html">Problem Shoot</a>
+                    </div>
+                </div>
+                <div class="item_2">
+                    <button class="profile" onclick="location.href='profilepage.html'">Profile</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="nav_bar">
+        <div class="head">
+            <h1>Volunteers</h1>
+        </div>
+        <div class="home">
+            <a href="volunteeractivities.html">Home</a>
+        </div>
+    </div>
+    <br>
+    <div class="thanks">
+    <h2>Thank you Volunteers:</h2>
+    <br>
+    <p>Thank you for generously volunteering your time at [Volunteer Activity or Event]. Your willingness to give your time and service is greatly appreciated. Your support of [insert organization name] allows us to continue to fulfill our mission and serve [number] people in our community each year. </p>
+    <br>
+    <hr>
+    <br>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="box1">
+            <div class="photo_para">
+                <img src="photo1.webp" alt="photo">
+            <div class="para">
+                <h4>volunteer for:</h4>
+                <p>With deepest gratitude for your commitment to serve, I thank you
+                     on behalf of [insert organization name] and the people we serve.
+                      Your generosity is seemingly endless. Thank you for your amazing 
+                      generosity. We are humbled by your generosity, both your volunteerism 
+                      and financial donation.</p>
+            </div>
+        </div>
+        <div class="name">harika</div>
+        <div class="contact">phone no: 6086524399</div>
+        </div>
+        <div class="box1">
+            <div class="photo_para">
+                <img src="photo3.jpg" alt="photo">
+            <div class="para">
+                <h4>volunteer for:</h4>
+                <p>With deepest gratitude for your commitment to serve, I thank you
+                     on behalf of [insert organization name] and the people we serve.
+                      Your generosity is seemingly endless. Thank you for your amazing 
+                      generosity. We are humbled by your generosity, both your volunteerism 
+                      and financial donation.</p>
+            </div>
+        </div>
+        <div class="name">harika</div>
+        <div class="contact">phone no: 6086524399</div>
+        </div>
+        <div class="box1">
+            <div class="photo_para">
+                <img src="photo2.jpg" alt="photo">
+            <div class="para">
+                <h4>volunteer for:</h4>
+                <p>With deepest gratitude for your commitment to serve, I thank you
+                     on behalf of [insert organization name] and the people we serve.
+                      Your generosity is seemingly endless. Thank you for your amazing 
+                      generosity. We are humbled by your generosity, both your volunteerism 
+                      and financial donation.</p>
+            </div>
+        </div>
+        <div class="name">harika</div>
+        <div class="contact">phone no: 6086524399</div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

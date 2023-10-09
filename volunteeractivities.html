@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Activities</title>
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set a background color and font for the entire page */
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Ubuntu', sans-serif;
+            color: #333;
+        }
+
+        /* Style the navbar */
+        .nav_bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            background-color: #036303;
+            color: white;
+            height: 75px;
+        }
+       .logo {
+        width: 50px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        margin-right: 10px; /* Add spacing to the right of the logo */
+        border-radius: 100%;
+    }
+    .title{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        /* Style the title */
+        .title h1 {
+            font-size: 1.5em;
+        }
+
+        /* Style the help button */
+        .help_button {
+            background-color: #8c46d8;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+   .nav_bar div {
+            margin-right: 1em;
+        }
+
+        .items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Style the dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .services {
+            background-color: #1faf1f;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+.navbar {
+overflow: hidden;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navbar div{
+    color: black;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(97, 82, 82);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.item1 {
+  margin-right: 10%;
+}
+
+.item1 .services2 {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  margin: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.navbar a:hover, .item1:hover .services2 {
+  background-color: #036303;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown_content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown_content a:hover {
+  background-color: #036303;
+}
+button:hover{
+    background: #036303;
+    color: white ;
+}
+
+.item1:hover .dropdown_content {
+  display: block;
+}
+.page_services{
+    display: flex;
+    justify-content: space-around;
+}
+.pagehead{
+    color: white;
+    padding-left: 2%;
+    margin-top: 1%;
+}
+.item2{
+    margin-right: 30%;
+    margin-top: 5%; /* Green */
+
+}
+.services2{
+    margin-top: 2%;
+    width: 100px;
+}
+.item{
+    text-align: center;
+    width: 100px;
+    margin-top: 5%;
+}
+.para{
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.line1{
+    font-weight: bold;
+}
+.details{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 4rem;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.img_matter{
+    display: flex;
+}
+.box1{
+    display: grid;
+    border: black;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.5) ;
+}
+img{
+    width: 250px;
+    height: 200px;
+}
+.matter{
+    justify-content: center;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+</style>
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="nav_bar">
+            <div class="title">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgzEjlWUUEdCerUry1W7wOKcLKpepjV9hOEQ&usqp=CAU" alt="community logo" class="logo">
+                <h1>CommunityHub</h1>
+            </div>
+            <div class="items">
+                <div class="dropdown">
+                    <button class="services">Services</button>
+                    <div class="dropdown-content">
+                        <a href="communitypage.html">Home</a>
+                        <a href="announcements.html">Announcements</a>
+                        <a href="discussions.html">Discussions</a>
+                        <a href="problemchatpage.html">Problem chat</a>
+                        <a href="alerts.html">Alert Box</a>
+                        <a href="volunteeractivities.html">Volunteer Activities</a>
+                        <a href="problemshoot.html">Problem Shoot</a>
+                    </div>
+                </div>
+                <div class="item_2">
+                    <button class="profile" onclick="location.href='profilepage.html'">Profile</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <nav class="navbar">
+        <div class="pagehead">
+            <h2>Volunteer Activities</h2>
+        </div>
+        <div class="page_services">
+            <div class="item1">
+                <button class="services2">For Volunteer</button>
+                    <div class="dropdown_content">
+                        <a href="rewards.html">rewards/prizes</a>
+                        <a href="volunteers Task.html">volunteer tasks</a>
+                        <a href="discussions.html">Discussion blog</a>
+                    </div>
+            </div>
+            <div class="item2">
+                <button type="button" onclick="" class="item">upload task</button>
+            </div>
+        </div>
+    </nav>
+    <div class="para">
+        <br>
+        <br>
+        <div class="line1">
+            <h1>Become a Volunteer</h1>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="line2">
+            <h4>Your time and talent can make a real difference in people's lives.</h4>
+            <br>
+        </div>
+
+    </div>
+    <div class="details">
+        <div class="box1">
+            <div class="img_matter">
+                <img src="work_1.jpg" alt="image">
+            <div class="matter">
+                <p>Join on ground implementation at events : Our goal at events is 
+                to reduce and manage the waste that is generated and we rely on 
+                a team of volunteers to help us achieve this. ...</p>
+            </div>
+            </div>
+
+        </div>
+        <div class="box1">
+            <div class="img_matter">
+                <img src="work2.webp" alt="image">
+            <div class="matter">
+                <p>Join on ground implementation at events : Our goal at events is 
+                to reduce and manage the waste that is generated and we rely on 
+                a team of volunteers to help us achieve this. ...</p>
+            </div>
+            </div>
+
+        </div>
+        <div class="box1">
+            <div class="img_matter">
+                <img src="work3.jpg" alt="image">
+            <div class="matter">
+                <p>Join on ground implementation at events : Our goal at events is 
+                to reduce and manage the waste that is generated and we rely on 
+                a team of volunteers to help us achieve this. ...</p>
+            </div>
+            </div>
+
+        </div>
+        <div class="box1">
+            <div class="img_matter">
+                <img src="work4.jpg" alt="image">
+            <div class="matter">
+                <p>Join on ground implementation at events : Our goal at events is 
+                to reduce and manage the waste that is generated and we rely on 
+                a team of volunteers to help us achieve this. ...</p>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    
+</body>
+</html>

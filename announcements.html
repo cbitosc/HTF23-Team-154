@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set a background color and font for the entire page */
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Ubuntu', sans-serif;
+            color: #333;
+        }
+
+        /* Style the navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            background-color: #036303;
+            color: white;
+            height: 75px;
+        }
+
+        .logo {
+        width: 50px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        margin-right: 10px; /* Add spacing to the right of the logo */
+        border-radius: 100%;
+    }
+    .title{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+        /* Style the title */
+        .title h1 {
+            font-size: 1.5em;
+        }
+
+        /* Style the help button */
+        .help_button {
+            background-color: #036303;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Add some spacing between elements in the navbar */
+        .navbar div {
+            margin-right: 1em;
+        }
+
+        .items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Style the dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .services {
+            background-color: #036303;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+
+        .dropdowns{
+            display: flex;
+            justify-content: space-between;
+        }
+        /* Style the dropdown and button */
+        label, select, button {
+            background-color: #036303;
+            color: white;
+            border: 2px solid white;
+            border-radius: 4px;
+            padding: 0.5em 1em;
+            margin: 10px;
+        }
+
+        select {
+            width: 200px;
+        }
+
+        /* Style the header */
+        header {
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Style the container for announcements */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style individual announcements */
+        .announcement {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .announcement h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .announcement p {
+            margin-bottom: 1em;
+        }
+
+        /* Style images */
+        .announcement img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="title">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgzEjlWUUEdCerUry1W7wOKcLKpepjV9hOEQ&usqp=CAU" alt="community logo" class="logo">
+                <h1>CommunityHub</h1>
+            </div>
+            <div class="items">
+                <div class="dropdown">
+                    <button class="services">Services</button>
+                    <div class="dropdown-content">
+                        <a href="communitypage.html">Home</a>
+                        <a href="announcements.html">Announcements</a>
+                        <a href="discussions.html">Discussions</a>
+                        <a href="problemchatpage.html">Problem chat</a>
+                        <a href="alerts.html">Alert Box</a>
+                        <a href="Volunteeractivities.html">Volunteer Activities</a>
+                        <a href="problemshoot.html">Problem Shoot</a>
+                    </div>
+                </div>
+                <div class="item_2">
+                    <button class="profile" onclick="location.href='profilepage.html'">Profile</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="dropdowns">
+        <div class="dropdown1">
+            <label for="dropdown">PREVIOUS UPDATES</label>
+            <select id="dropdown">
+                <option value="option1">Auction of Laddoo</option>
+                <option value="option2">Donation of free food on the occasion of Vinayaka Chaturthi</option>
+                <option value="option3">Collection of money for Ganesh idol</option>
+                <option value="option4">Independence Day celebrations</option>
+                <option value="option5">Community President Elections</option>
+                <option value="option6">Update-3</option>
+                <option value="option7">Update-2</option>
+                <option value="option8">Update-1</option>
+            </select>
+        </div>
+        <div class="add_button">
+            <button>ADD</button>
+        </div>
+    </div>
+    <header>
+        <h1>ANNOUNCEMENTS</h1>
+    </header>
+    <div class="container">
+        <div class="announcement">
+            <h2><b>Ganesh Visarjan</b></h2>
+            <p>DATE: 28th Sept, 2023</p>
+            <p>As the sun dipped below the horizon, casting a warm golden glow over our community, residents gathered with beaming smiles and hearts full of devotion to bid farewell to Lord Ganesha during the grand Ganesh Visarjan celebrations.</p>
+            <h4>Colorful Procession Through the Streets</h4>
+            <p>The highlight of our Ganesh Visarjan celebration was the vibrant procession that wound its way through the streets of our locality. A beautifully adorned idol of Ganesha, lovingly brought into our homes at the beginning of the festival, was now being carried back to the Hussain Sagar Lake amidst the sound of drums. The idol adorned with flowers and traditional attire gleamed in the soft glow of the evening. Devotees, young and old, danced alongside, shouting "Ganapathi Bappa Morya" that filled the air with happiness and enthusiasm.</p>
+            <img src="https://i.ytimg.com/vi/DnXcD0EX63A/maxresdefault.jpg" alt="Ganesh Visarjan" width="500" height="500">
+        </div>
+        <div class="announcement">
+            <h2><b>Ganesh Chaturthi Celebrations in Our Community</b></h2>
+            <p>DATE: 18th Sept, 2023</p>
+            <p>It's a sunlit day with, alive with anticipation. The air is brimming with excitement and the people are adorning their homes with flowers and colorful rangolis. All the people of the community, both young and old gathered to celebrate the birth of Lord Ganesha, the remover of obstacles.</p>
+            <h4>A Grand Inauguration</h4>
+            <p>The festivities kicked off with the installation of the large Ganesha idol in the community. A huge pandal has been set up. Elaborate decorations, floral arrangements, and diyas adorned the idol creating an atmosphere of pure spirituality. The priest was called and after the completion of the pooja, prasad was distributed among the devotees. Dancing and singing programs were organized and gifts were given away to the winners. Lord Ganesha was worshipped for 9 days and on the 10th day, the Ganesha idol was immersed in the Hussain Sagar Lake.</p>
+            <img src="https://files.prokerala.com/news/photos/imgs/800w/people-worship-an-idol-of-lord-ganesh-on-ganesh-578386.jpg" alt="Ganesh Idol" width="500" height="500">
+        </div>
+        <!-- Add more announcements here -->
+    </div>
+</body>
+</html>

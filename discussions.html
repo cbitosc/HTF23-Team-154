@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discussion Page</title>
+  <style>
+    /* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.discussion-box {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.message-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Style for previous discussions */
+.previous-discussions {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.discussion-message {
+  margin-bottom: 10px;
+}
+
+.discussion-message p {
+  background-color: #e9e9e9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.reply-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  float: right;
+  /* Float the reply button to the right */
+}
+
+.reply-button:hover {
+  background-color: #555;
+}
+
+/* Clear the float to prevent layout issues */
+.discussion-message::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  justify-content: center;
+  min-height: 100vh;
+  background: white;
+  flex-direction: column;
+}
+
+/* Reset some default styles */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Define general styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.like-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 10px 2px 2px;
+  margin-left: 10px;
+  cursor: pointer;
+  float: right;
+}
+
+.like-button:hover {
+  background-color: #555;
+}
+
+.thumbs-up {
+  font-size: 16px;
+  margin-right: 5px;
+  color: blue;
+}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set a background color and font for the entire page */
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Ubuntu', sans-serif;
+            color: #333;
+        }
+
+        /* Style the navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            background-color: #036303;
+            color: white;
+            height: 75px;
+        }
+       .logo {
+        width: 50px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        margin-right: 10px; /* Add spacing to the right of the logo */
+        border-radius: 100%;
+    }
+    .title{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        /* Style the title */
+        .title h1 {
+            font-size: 1.5em;
+        }
+
+        /* Style the help button */
+        .help_button {
+            background-color: #036303;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+   .navbar div {
+            margin-right: 1em;
+        }
+
+        .items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Style the dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .services {
+            background-color: #036303;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .profile{
+            background-color: #036303;
+            color: white;
+            border: 2px solid white;
+            border-radius: 4px;
+            padding: 0.5em 1em;
+            margin: 10px;
+        }
+  </style>
+</head>
+
+<body>
+  <div>
+        <nav class="navbar">
+            <div class="title">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgzEjlWUUEdCerUry1W7wOKcLKpepjV9hOEQ&usqp=CAU" alt="community logo" class="logo">
+                <h1>CommunityHub</h1>
+            </div>
+            <div class="items">
+                <div class="dropdown">
+                    <button class="services">Services</button>
+                    <div class="dropdown-content">
+                      <a href="communitypage.html">Home</a>
+                        <a href="announcements.html">Announcements</a>
+                        <a href="discussions.html">Discussions</a>
+                        <a href="problemchatpage.html">Problem chat</a>
+                        <a href="alerts.html">Alert Box</a>
+                        <a href="Volunteeractivities.html">Volunteer Activities</a>
+                        <a href="problemshoot.html">Problem Shoot</a>
+                    </div>
+                </div>
+                <div class="item_2">
+                    <button class="profile" onclick="location.href='profilepage.html'">Profile</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+  <div class="container">
+    <div class="discussion-box">
+      <h1>Discussion Page</h1>
+      <div class="message-input">
+        <textarea placeholder="Write your message here..."></textarea>
+        <button>Post</button>
+      </div>
+      <!-- Discussion messages input can be added here -->
+
+      <!-- Previous discussions box -->
+      <!-- Add a reply button inside each discussion-message -->
+      <div class="previous-discussions">
+        <h2>Previous Discussions</h2>
+        <div class="discussion-message">
+          <p>User 1: This is the first message.</p>
+          <button class="reply-button">Reply</button>
+          <button class="like-button"><span class="thumbs-up">&#128077;</span> Like</button>
+        </div>
+        <div class="discussion-message">
+          <p>User 2: Another discussion message.</p>
+          <button class="reply-button">Reply</button>
+          <button class="like-button"><span class="thumbs-up">&#128077;</span> Like</button>
+        </div>
+        <!-- Add more discussion messages as needed -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

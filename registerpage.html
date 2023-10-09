@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+    body {
+        background-color: #f2f2f2;
+        font-family: 'Ubuntu', sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Style the navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        background-color: #036303;
+        color: white;
+    }
+
+    .logo {
+        width: 50px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        margin-right: 10px; /* Add spacing to the right of the logo */
+        border-radius: 100%;
+    }
+    .title{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /* Style the title */
+    .title h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    /* Style the help button */
+    .help_button {
+        background-color: #036303;
+        color: white;
+        border: 2px solid white;
+        border-radius: 4px;
+        padding: 0.5em 1em;
+        margin: 10px;
+    }
+
+    /* Style the main content container */
+    .main {
+        padding: 2em;
+    }
+
+    /* Style the steps navigation */
+    .steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #036303;
+        color: white;
+        padding: 0.5em 1em;
+        border-radius: 4px;
+    }
+    .steps a{
+        font-style: none;
+        font-weight: bold;
+        color: white;
+    }
+
+    /* Style the registration form */
+    .registration_form {
+        background-color: white;
+        padding: 2em;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style form elements */
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="password"] {
+        padding: 0.5em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    select {
+        padding: 0.5em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        background-color: #036303;
+        color: white;
+        border: none;
+        padding: 0.5em 1em;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="title">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgzEjlWUUEdCerUry1W7wOKcLKpepjV9hOEQ&usqp=CAU" alt="community logo" class="logo">
+                <h1>CommunityHub</h1>
+            </div>
+            <div class="help">
+                <button class="help_button">Help</button>
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="steps">
+            <h3>Step 1</h3>
+            <a href="#"><h3>Step 2</h3></a>
+            <a href="#"><h3>Step 3</h3></a>
+        </div>
+        <div class="registration_form">
+            <form action="">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <input type="text" name="mobileno" id="mobileno" placeholder="Enter your mobile number">
+                <input type="email" name="emailid" id="emailid" placeholder="Enter your email">
+                <input type="date" name="dob" id="dob" placeholder="Enter your date of birth">
+                <input type="password" name="password" id="password" placeholder="Enter a strong password">
+                <label for="state">Choose your state</label>
+                <select id="state" name="state">
+                    <option value="Telangana">Telangana</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Gujarat">Gujarat</option>
+                </select>
+                <label for="city">Choose your city</label>
+                <select id="city" name="city">
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Warangal">Warangal</option>
+                    <option value="Secunderabad">Secunderabad</option>
+                    <option value="Nizambad">Nizambad</option>
+                </select>
+                <label for="locality">Choose your locality</label>
+                <select id="locality" name="locality">
+                    <option value="alwal">alwal</option>
+                    <option value="ammerpet">ammerpet</option>
+                    <option value="bowenpally">bowenpally</option>
+                    <option value="Erragadda">Erragadda</option>
+                </select>
+                <input type="text" name="address" id="address" placeholder="Enter your address here">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
